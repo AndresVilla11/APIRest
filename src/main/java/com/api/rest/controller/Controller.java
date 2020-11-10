@@ -4,6 +4,8 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,9 +19,9 @@ public class Controller {
 	@Autowired
 	private Model model;
 	
-	@RequestMapping("/Crear_Persona/Guardar")
-	public String Datos(Model model) {
+	@PostMapping("/Guardar")
+	public String Datos(@RequestBody Model model) {
 		LOG.info(model.toString());
-		return "Hola";
+		return model.toString();
 	}
 }

@@ -22,7 +22,7 @@ public class ControllerHTML {
 		return "Listar-Personas";
 	}
 
-	@RequestMapping(value = { "/Crear_Persona/Guardar" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/Guardar" }, method = RequestMethod.GET)
 	public String controlDeRetorno() {
 		return "redirect:/";
 	}

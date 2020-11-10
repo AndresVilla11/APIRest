@@ -24,4 +24,9 @@ public class Model {
 		this.apellido = apellido;
 	}
 
+	@Override
+	public String toString() {
+		return "Model [nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
+	
 }
