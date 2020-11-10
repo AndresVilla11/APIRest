@@ -1,5 +1,8 @@
 package com.api.rest.models;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Model {
 
 	private String nombre;
